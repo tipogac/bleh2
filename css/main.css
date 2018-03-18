@@ -588,7 +588,8 @@ ul li {
 
 .square-blocks div {
 	height: 200px;
-	width: 200px;	
+	width: 200px;
+	margin-left: 35px;
 }
 .square-blocks .light-grey-bg {
 	background-color: #434547;
