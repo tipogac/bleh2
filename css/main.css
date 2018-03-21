@@ -450,7 +450,7 @@ ul li {
 	 Testimonials
 -------------------------------------------------------------------------------*/
 .testimonials {
-	background-color: #2e2f30;
+	background-color: #181818;
 	position: relative;
 	text-align: center;
 }
@@ -612,8 +612,8 @@ ul li {
 
 
 .square-blocks div {
-	height: 200px;
-	width: 200px;
+	height: 250px;
+	width: 250px;
 	margin-left: 35px;
 }
 .square-blocks .light-grey-bg {
@@ -663,8 +663,8 @@ ul li {
 }
 
 .square-blocks1 div {
-	height: 200px;
-	width: 200px;
+	height: 250px;
+	width: 250px;
 	margin-left: 35px;
 }
 .square-blocks1 .light-grey-bg {
