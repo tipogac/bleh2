@@ -18,6 +18,7 @@
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/font-icon.css">
 <link rel="stylesheet" href="css/animate.min.css">
+<link href="lightbox/css/lightbox.css" rel="stylesheet">
 <link href="vegas/vegas.css" rel="stylesheet">
 <link href="socicon/style.css" rel="stylesheet">
 
@@ -52,17 +53,53 @@
 </section>
 <!-- header section --> 
 <!-- intro section -->
-<section id="intro" class="section intro">
-  <div class="container">
-    <h2 class="w3-center" style="text-align:center">Some of my works</h2>
+<section id="intro">
+<div class="container">
+  <h2 style="text-align:center">Some of my work</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
 
-<div class="w3-content w3-section" style="width:100%">
-  <img class="mySlides" src="img/aa.png" style="width:100%">
-  <img class="mySlides" src="img/sl23.png" style="width:100%">
-  <img class="mySlides" src="img/aaa.png" style="width:100%">
-  <img class="mySlides" src="img/333.png" style="width:100%">
-  <img class="mySlides" src="img/aaaa.png" style="width:100%">
-</div><br><br>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/aa.png" alt="somethingsomething" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/aaa.png" alt="sdlkasdlgakl" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="img/sl23.png" alt="sdafasdgasg" style="width:100%;">
+      </div>
+	  <div class="item">
+        <img src="img/333.png" alt="sdafasdgasg" style="width:100%;">
+      </div>
+	  <div class="item">
+        <img src="img/aaaa.png" alt="sdafasdgasg" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+</section>
 
 <section id="testimonials" class="section testimonials no-padding">
   <div class="container-fluid">
@@ -109,22 +146,7 @@
   
   </section>
 
-<script>
-var myIndex = 0;
-carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
 			
   </div>
 </section>
@@ -293,14 +315,20 @@ function carousel() {
           </ul>
         </div>
       </div>
+	  <p id="time" style="float:left"></p>
+
+<script>
+document.getElementById("time").innerHTML = Date();
+</script>
     </div>
   </div>
+  
   <!-- footer top --> 
   
 </footer>
 <script src="vegas/vegas.js"></script>
 <script>
-		$("work").vegas({
+		$("container").vegas({
     slides: [
         { src: "img/Group2.png"}
     ],
