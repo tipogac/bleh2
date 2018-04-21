@@ -28,33 +28,63 @@
 <!-- header section -->
 <section class="banner" role="banner">
   <header id="header">
-    <div class="header-content clearfix"> <a class="logo" href="index.html">Home</a>
-      <nav class="navigation" role="navigation">
-        <ul class="primary-nav">
-          <li><a href="#intro">About</a></li>
-          <li><a href="#services">Skills</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+    
+      <nav class="navbar navbar-inverse navbar-fixed-top" style="float:right">
+        
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="float:right" background-color=black>
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="float:right" background-color=black>
+                <ul class="nav navbar-nav">
+  
+                    <li>
+                        <a href="#testimonials">About me</a>
+                    </li>
+                    <li>
+                        <a href="#services">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#works">My works</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+ <!-- /.navbar-collapse -->
+       
+    </nav>
+
+
   </header>
   <!-- banner text -->
   <div class="container">
     <div class="col-md-10 col-md-offset-1">
-      <div class="banner-text text-center">
-        <h1>My Portfolio</h1>
-        <p>Here you can get to know me and see some of my works and skills :)</p>
+      <div class="banner-text text-center"><br><br><br><br><br><br>
+        <h1 style="color:white">My Portfolio</h1>
+        <p style="color:white">Here you can get to know me and see some of my works and skills :)</p>
+		<div class="scroll"><br><br><br><br><br><br>
+            <img src="img/scroll.gif">
+        </div>
 			</div>
       <!-- banner text --> 
     </div>
   </div>
-</section>
+</section><br><br><br>
 <!-- header section --> 
 <!-- intro section -->
 <section id="intro">
-<div class="container">
-  <h2 style="text-align:center">Some of my work</h2>  
+<div class="container"><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h2 style="text-align:center" style="color:white">Some of my work</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -97,7 +127,6 @@
     </a>
   </div>
 </div>
-
 </section>
 
 <section id="testimonials" class="section testimonials no-padding">
@@ -209,6 +238,7 @@
         </div>
         <!-- overlay --> 
         </a> </div>
+
       <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="img/sl2.png" class="work-box"> <img src="img/sl2.png" alt="">
         <div class="overlay">
           <div class="overlay-caption">
@@ -247,6 +277,7 @@
         </a> </div>
     </div>
   </div>
+  
 </section>
 <!-- work section --> 
 <div class="section">		
@@ -283,10 +314,10 @@
 <!-- contact section --> 
 
 <!-- Footer section -->
-<footer class="footer">
-  <div class="footer-top section">
-    <div class="container">
-      <div class="row">
+<div class="row footer">
+	<div class="col-xs-12">
+	
+		<div class="row">
         <div class="footer-col col-md-6">
           <h5>Tina Pogac</h5>
           <p>University North<br>
@@ -296,46 +327,54 @@
           <p>
           <h5>Services</h5>
           <p>
-          <ul>
+          <ul style="margin-left:100px">
             <li>Websites</li>
             <li>Photography</li>
             <li>Video editing</li>
             <li>Figma/Sketch</li>
             <li>Photoshop</li>
+			<br><br>
+			<li><a href="#">Back to top</a></li>
           </ul>
           </p>
         </div>
         <div class="footer-col col-md-3">
           <h5>Share</h5>
-          <ul class="footer-share">
+          <ul class="footer-share" style="margin-left:100px">
             <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
             <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
             <li><a href="https://www.linkdin.com/"><i class="fa fa-linkedin"></i></a></li>
           </ul>
         </div>
       </div>
-	  <p id="time" style="float:left"></p>
-
-<script>
-document.getElementById("time").innerHTML = Date();
-</script>
-    </div>
-  </div>
-  
-  <!-- footer top --> 
-  
-</footer>
-<script src="vegas/vegas.min.js"></script>
-<script>
-		$("#header").vegas({
+	</div>
+</div>
+			
+		</div>
+		
+			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>		
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="lightbox/js/lightbox.js"></script>
+				<script src="vegas/vegas.js"></script>
+		
+		<script>
+		$(".html, body, footer").vegas({
     slides: [
-        { src: "img/Group2.png"}
+        { src: "img/3.png" },
+        { src: "img/1.jpg" },
+        { src: "img/b2.jpg" },
     ],
 	animation: [ 'kenburnsUp', 'kenburnsDown', 'kenburnsLeft', 'kenburnsRight' ],
 	overlay: 'js/vegas/dist/overlays/08.png'
 })
 
 		</script>
+  <!-- footer top --> 
+  
+</footer>
+<script src="vegas/vegas.js"></script>
+
 
 <!-- Footer section --> 
 <!-- JS FILES --> 
