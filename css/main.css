@@ -19,7 +19,7 @@ p {
 }
 h1 {
 	font-size: 65px;
-	color: #2d3033;
+	color: #white;
 }
 h2 {
 	font-size: 40px;
@@ -271,7 +271,7 @@ font-size: 14px;
 	height: 100%;
 }
 .work .overlay {
-	background: rgba(37, 38, 38, 0.5);
+	background: rgba(0, 0, 0, 0.5);
 	height: 100%;
 	left: 0;
 	opacity: 0;
@@ -507,8 +507,8 @@ font-size: 14px;
 
 
 .square-blocks div {
-	height: 300px;
-	width: 300px;
+	height: 200px;
+	width: 200px;
 	margin-left: 35px;
 }
 .square-blocks .light-grey-bg {
@@ -560,7 +560,7 @@ font-size: 14px;
 .square-blocks1 div {
 	height: 200px;
 	width: 200px;
-	margin-left: 100px;
+	margin-left: 35px;
 }
 .square-blocks1 .light-grey-bg {
 	background-color: rgba(256, 256, 256, 0.2);
