@@ -47,6 +47,9 @@
  .testimonials p {
  font-size: 12px;
 }
+.testimonials h1 {
+ font-size: 30px;
+}
  .flex-control-nav {
  bottom: 20px;
 }
@@ -78,6 +81,7 @@
  .testimonials p {
  font-size: 12px;
 }
+}
 @media screen and (max-width: 480px) {
  .banner-text {
  padding-top: 45%;
@@ -87,6 +91,7 @@
 }
  .testimonials p {
  font-size: 12px;
+}
 }
 @media screen and (max-width: 320px) {
  .banner-text {
@@ -98,4 +103,26 @@
  .testimonials p {
  font-size: 12px;
 }
+}
+
+@media screen and (max-width: 320px) {
+	.button {
+		width: 100px;
+		
+		margin-left: none;
+	}
+}
+
+@media screen and (max-width: 320px) {
+.square-blocks div {
+	height: 200px;
+	width: 200px;
+	margin-left: 20%;
+}
+
+@media screen and (max-width: 320px) {
+.square-blocks1 div {
+	height: 200px;
+	width: 200px;
+	margin-left: 20%;
 }
