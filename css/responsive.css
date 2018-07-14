@@ -105,24 +105,18 @@
 }
 }
 
-@media screen and (max-width: 320px) {
-	.button {
-		width: 100px;
-		
-		margin-left: none;
-	}
-}
+
 
 @media screen and (max-width: 320px) {
 .square-blocks div {
 	height: 200px;
 	width: 200px;
-	margin-left: 20%;
+	margin-left: 30%;
 }
 
-@media screen and (max-width: 320px) {
 .square-blocks1 div {
 	height: 200px;
 	width: 200px;
-	margin-left: 20%;
+	margin-left: 30px;
+}
 }
