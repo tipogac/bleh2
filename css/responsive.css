@@ -111,14 +111,14 @@
 .square-blocks div {
 	height: 150px;
 	width: 150px;
-	margin-left: 28%;
+	left: 0;
 	
 }
 
 .square-blocks1 div {
 	height: 150px;
 	width: 150px;
-	margin-left: 28%;
+	left: 0;
 }
 
 
