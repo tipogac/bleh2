@@ -640,7 +640,7 @@ font-size: 14px;
 .button {
 	background-color: white;
     background-color: rgba(0, 0, 0, 0.3);
-    border: 2px solid black;
+    border: 2px solid white;
 	width: 250px;
 	margin-left: 45px;
 }

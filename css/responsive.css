@@ -16,6 +16,7 @@
  height: 100%;
  top: 0;
  left: 0;
+ right: 25px;
  z-index: 99999;
  visibility: hidden;
  opacity: 0;
